@@ -24,7 +24,7 @@ const styles = {
 
 function aboutMe() {
 
-    retrun (
+    return (
         <div style={styles.card}> 
             <h1 style={styles.header}> About Me</h1>
             <p style={styles.content}>Hello Everyone, My name is Walsh Vaz. I am currently studying web development at the

@@ -9,6 +9,16 @@ const projects = [
         deployed: true,
         github: 'https://github.com/JSinc98/Petadoptionassistance.git',
         description: 'This is a site where the user can view all the cats and dogs up for adoption the user can view all the infomation can search based on the name or breed.'
+    },
+
+    {
+        id: 2,
+        name: 'coding conference',
+        text: 'A site for viewing talks',
+        technologies: 'JavaScript, html, css',
+        deployed: true,
+        github: 'https://github.com/mdeluca13/coding-empire-conference.git',
+        description: 'This is a site where the user can view all the talks, the user can add and delete talks as well as ask questions'
     }
 ];
 
@@ -31,7 +41,8 @@ const styles = {
     content: {
         background: "grey",
         color: "white",
-        //padding: 20,
+        flex: 1,
+       //padding: 20,
     },
 };
 
@@ -39,11 +50,11 @@ function displayProjects() {
 
     return (
     <div style={styles.card}>
+        <h1 style={styles.header}> My Projects</h1>
         {projects.map((project) => {
             return (
                 <div>
-                <h1 style={styles.header}> My Projects</h1>
-                    <a style={styles.content}> {project.name}</a>
+                    <h2>{project.id}: {project.name}</h2>
                     <a style={styles.content}>{project.description}</a>
                     <a href={project.github} style={styles.content}> github link: {project.github}</a>
                 </div>

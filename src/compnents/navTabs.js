@@ -1,36 +1,64 @@
 import React from 'react';
 
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
+const styles = {
+  ul : {
+      display: "flex",
+      flexDirection: "row",
+      float: "right",
+      padding: "3px, 10px"
+      
+  },
+
+  li: {
+     //background: "blue",
+     display: "block",
+     fontSize: "1.5rem",
+     marginLeft: 30,
+     //marginUp: 60,
+     marginRight: 40,
+
+     
+  },
+
+  content: {
+      background: "green",
+      color: "white",
+      padding: 20,
+  },
+};
+
+
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul >
-      <li>
+    
+    <ul style = {styles.ul}>
+      <li style={styles.li}>
         <a
           href="#aboutMe"
           onClick={() => handlePageChange('aboutMe')}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
+          
 
           className={currentPage === 'aboutMe' ? 'nav-link active' : 'nav-link'}
         >
           About Me
         </a>
       </li>
-      <li>
+      <li style={styles.li}>
         <a
           href="#projects"
           onClick={() => handlePageChange('displayProjects')}
-          //  TODO: Add a comment explaining what this logic is doing
+          
 
           className={currentPage === 'displayProjects' ? 'nav-link active' : 'nav-link'}
         >
           Projects
         </a>
       </li>
-      <li>
+      <li style={styles.li}>
         <a
           href="#footer"
-          //  TODO: Add a comment explaining what this logic is doing
+          
 
           onClick={() => handlePageChange('contactInfo')}
           className={currentPage === 'contactInfo' ? 'nav-link active' : 'nav-link'}

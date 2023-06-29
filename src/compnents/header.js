@@ -7,7 +7,7 @@ import Contact from './pages/footer';
 function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('aboutMe');
   
-    // TODO: Add a comment describing the functionality of this method
+    
     const renderPage = () => {
       
       if (currentPage === 'aboutMe') {

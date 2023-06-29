@@ -4,6 +4,7 @@ const styles = {
     card : {
         margin: 40,
         background: "yellow",
+        padding: 60
     },
 
     header: {

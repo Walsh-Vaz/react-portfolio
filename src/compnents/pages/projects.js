@@ -44,6 +44,13 @@ const styles = {
         flex: 1,
        //padding: 20,
     },
+
+    link: {
+        background: "orange",
+        color: "blue",
+        flex: 1,
+       //padding: 20,
+    },
 };
 
 function displayProjects() {
@@ -55,8 +62,8 @@ function displayProjects() {
             return (
                 <div>
                     <h2>{project.id}: {project.name}</h2>
-                    <a style={styles.content}>{project.description}</a>
-                    <a href={project.github} style={styles.content}> github link: {project.github}</a>
+                    <p style={styles.content}>{project.description}</p>
+                    <a href={project.github} style={styles.link}> github link: {project.github}</a>
                 </div>
             )
         })}

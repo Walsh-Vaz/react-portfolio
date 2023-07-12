@@ -23,7 +23,7 @@ const styles = {
     },
 };
 
-function aboutMe() {
+function AboutMe() {
 
     return (
         <div style={styles.card}> 
@@ -37,4 +37,4 @@ function aboutMe() {
     );
 }
 
-export default aboutMe;
+export default AboutMe;

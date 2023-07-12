@@ -53,7 +53,7 @@ const styles = {
     },
 };
 
-function displayProjects() {
+function DisplayProjects() {
 
     return (
     <div style={styles.card}>
@@ -71,7 +71,7 @@ function displayProjects() {
     );
 }
 
-export default displayProjects;
+export default DisplayProjects;
 
 
 

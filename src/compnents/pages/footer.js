@@ -38,7 +38,7 @@ const styles = {
 };
 
 
-function contactInfo() {
+function ContactInfo() {
 
     const [email, setEmail] = useState("");
 
@@ -61,4 +61,4 @@ function contactInfo() {
     );
 }
 
-export default contactInfo;
+export default ContactInfo;
